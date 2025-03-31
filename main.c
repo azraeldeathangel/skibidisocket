@@ -25,6 +25,7 @@ int main(void) {
     // Catch errors
     if (server_socket == -1) {
         perror("socket");
+        return 1;
     }
 
     // Configure Server Address
