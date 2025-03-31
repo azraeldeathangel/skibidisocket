@@ -28,8 +28,8 @@ int main(void) {
     }
 
     // Define server address
-    client_address.sin_family = AF_INET;                                // IPv4
-    client_address.sin_port = htons(1234);                     // Port number (convert to network byte order)
+    client_address.sin_family = AF_INET;                             // IPv4
+    client_address.sin_port = htons(1234);                          // Port number (convert to network byte order)
     client_address.sin_addr.s_addr = inet_addr("192.168.255.130"); // Server IP address
 
     // Attempt to connect to the server
